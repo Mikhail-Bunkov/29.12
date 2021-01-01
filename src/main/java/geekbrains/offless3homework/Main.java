@@ -20,7 +20,7 @@ public class Main {
         Random random = new Random() ;
         Scanner scanner = new Scanner(System.in);
         int x;
-        int j = random.nextInt()*10;
+        int j = random.nextInt(10);
         for (int i = 0; i<3; i++)
         {
             System.out.println("Введите число: ");
@@ -34,6 +34,10 @@ public class Main {
             {
                 System.out.println("Введеное число меньше загаданного. Минус одна попытка, лузер ");
                 lives--;
+            }
+            if(i==2 && x!=j)
+            {
+                System.out.println("Лошара, аххахахахаахаха проиграл");
             }
             if (x == j)
             {
